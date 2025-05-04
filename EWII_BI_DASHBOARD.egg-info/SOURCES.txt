@@ -1,0 +1,6 @@
+pyproject.toml
+EWII_BI_DASHBOARD.egg-info/PKG-INFO
+EWII_BI_DASHBOARD.egg-info/SOURCES.txt
+EWII_BI_DASHBOARD.egg-info/dependency_links.txt
+EWII_BI_DASHBOARD.egg-info/requires.txt
+EWII_BI_DASHBOARD.egg-info/top_level.txt

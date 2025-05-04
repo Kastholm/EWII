@@ -1,0 +1,134 @@
+[
+  {
+    "Kontraktnavn":"Fiber 300\/300",
+    "Count":21013,
+    "Percent":36.2524368994,
+    "Payment":255722329.2800000012
+  },
+  {
+    "Kontraktnavn":"Fiber 100\/100",
+    "Count":11095,
+    "Percent":19.1415213153,
+    "Payment":158504277.5900000036
+  },
+  {
+    "Kontraktnavn":"Fiber 1000\/1000",
+    "Count":10731,
+    "Percent":18.5135344961,
+    "Payment":53702469.049999997
+  },
+  {
+    "Kontraktnavn":"Fiber 500\/500",
+    "Count":5531,
+    "Percent":9.5422942222,
+    "Payment":107077080.150000006
+  },
+  {
+    "Kontraktnavn":"DSL",
+    "Count":1927,
+    "Percent":3.3245346169,
+    "Payment":3855137.23
+  },
+  {
+    "Kontraktnavn":"Fiber 25\/25",
+    "Count":1514,
+    "Percent":2.6120111105,
+    "Payment":42757797.4399999976
+  },
+  {
+    "Kontraktnavn":"COAX 1000\/60",
+    "Count":1248,
+    "Percent":2.1530976658,
+    "Payment":2652914.5499999998
+  },
+  {
+    "Kontraktnavn":"COAX 100\/35",
+    "Count":846,
+    "Percent":1.459551783,
+    "Payment":1491982.1599999999
+  },
+  {
+    "Kontraktnavn":"Fiber 200\/200",
+    "Count":829,
+    "Percent":1.4302227283,
+    "Payment":1938620.3400000001
+  },
+  {
+    "Kontraktnavn":"Fiber 1000\/500",
+    "Count":690,
+    "Percent":1.1904145748,
+    "Payment":1710310.1000000001
+  },
+  {
+    "Kontraktnavn":"Fiber 20\/20",
+    "Count":605,
+    "Percent":1.0437693011,
+    "Payment":15782499.9700000007
+  },
+  {
+    "Kontraktnavn":"Fiber 50\/50",
+    "Count":448,
+    "Percent":0.7729068544,
+    "Payment":10077625.6400000006
+  },
+  {
+    "Kontraktnavn":"Fiber 250\/250",
+    "Count":298,
+    "Percent":0.5141210772,
+    "Payment":613838.74
+  },
+  {
+    "Kontraktnavn":"COAX 200\/25",
+    "Count":283,
+    "Percent":0.4882424995,
+    "Payment":499777.22
+  },
+  {
+    "Kontraktnavn":"COAX 1000\/500",
+    "Count":205,
+    "Percent":0.3536738954,
+    "Payment":292693.41
+  },
+  {
+    "Kontraktnavn":"COAX 300\/300",
+    "Count":204,
+    "Percent":0.3519486569,
+    "Payment":248580.16
+  },
+  {
+    "Kontraktnavn":"Fiber 10\/10",
+    "Count":164,
+    "Percent":0.2829391163,
+    "Payment":3872556.6099999999
+  },
+  {
+    "Kontraktnavn":"COAX 200\/20",
+    "Count":134,
+    "Percent":0.2311819609,
+    "Payment":236527.17
+  },
+  {
+    "Kontraktnavn":"COAX 300\/60",
+    "Count":96,
+    "Percent":0.1656228974,
+    "Payment":128530.66
+  },
+  {
+    "Kontraktnavn":"Fiber 30\/30",
+    "Count":81,
+    "Percent":0.1397443197,
+    "Payment":170217.64
+  },
+  {
+    "Kontraktnavn":"Fiber 60\/60",
+    "Count":19,
+    "Percent":0.0327795318,
+    "Payment":81048.35
+  },
+  {
+    "Kontraktnavn":"Fiber 400\/400",
+    "Count":2,
+    "Percent":0.003450477,
+    "Payment":4746.0
+  }
+]

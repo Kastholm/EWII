@@ -1,0 +1,19 @@
+[project]
+name = "EWII_BI_DASHBOARD"
+version = "0.1.0"
+description = "Dashboard til EWII"
+authors = [
+    {name = "Marc", email = "Kastholm1995@gmail.com"}
+]
+dependencies = [
+    "python-dotenv>=1.1.0",
+    "matplotlib>=3.10.1",
+    "dash>=3.0.4",
+    "pandas>=2.2.3",
+    "dash-bootstrap-components>=2.0.2",
+    "openpyxl>=3.1.5"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
