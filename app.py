@@ -3,8 +3,18 @@ import dash
 
 app = Dash(__name__, use_pages=True)
 
+""" action_buttons =  html.Div(
+    className="flex flex-col fixed r-0",
+    children=[
+            html.Img(
+            src="img/Screenshot2025-05-05.png",
+            className="h-12 "
+        ),  
+    ]
+) """
+
 navbar = html.Div(
-    className="flex flex-col bg-[#fbfbfb] bg-opacity-[60] min-w-56 h-screen p-4",
+    className="flex flex-col bg-white shadow-md bg-opacity-[60] min-w-56 h-[95vh] m-4 p-4 rounded-md",
     children=[
         # Altid synlige links
         html.Img(
@@ -52,7 +62,7 @@ navbar = html.Div(
 
 app.layout = html.Div([
     dcc.Location(id="url", refresh=False),
-    html.Div([navbar, dash.page_container], className="grid bg-gradient-to-l from-[#7bb93d] to-[#7bb93d'] grid-cols-[auto_1fr]")
+    html.Div([navbar, dash.page_container], className="grid bg-gradient-to-r from-[#7bb93d] to-[#c1ed93] grid-cols-[auto_1fr]")
 ])
 
 if __name__ == "__main__":

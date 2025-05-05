@@ -3,132 +3,242 @@
     "Kontraktnavn":"Fiber 300\/300",
     "Count":19646,
     "Percent":35.5821998442,
-    "Payment":251094308.7800000012
+    "Payment":251094308.7800000012,
+    "PremiumWifiCount":967.0,
+    "AccessPointCount":119.0,
+    "RykkerSaldoSum":5643836.9699999997,
+    "AntalRykker1Sum":9639.0,
+    "AntalRykker2Sum":2453.0
   },
   {
     "Kontraktnavn":"Fiber 100\/100",
     "Count":10727,
     "Percent":19.4283954866,
-    "Payment":157562905.6899999976
+    "Payment":157562905.6899999976,
+    "PremiumWifiCount":420.0,
+    "AccessPointCount":19.0,
+    "RykkerSaldoSum":4311706.3499999996,
+    "AntalRykker1Sum":6819.0,
+    "AntalRykker2Sum":1810.0
   },
   {
     "Kontraktnavn":"Fiber 1000\/1000",
     "Count":10330,
     "Percent":18.7093619256,
-    "Payment":60841631.9699999988
+    "Payment":60841631.9699999988,
+    "PremiumWifiCount":4855.0,
+    "AccessPointCount":433.0,
+    "RykkerSaldoSum":2756454.6400000001,
+    "AntalRykker1Sum":4078.0,
+    "AntalRykker2Sum":1183.0
   },
   {
     "Kontraktnavn":"Fiber 500\/500",
     "Count":5389,
     "Percent":9.7603825186,
-    "Payment":105974602.650000006
+    "Payment":105974602.650000006,
+    "PremiumWifiCount":2936.0,
+    "AccessPointCount":234.0,
+    "RykkerSaldoSum":3543240.5499999998,
+    "AntalRykker1Sum":4858.0,
+    "AntalRykker2Sum":1350.0
   },
   {
     "Kontraktnavn":"DSL",
     "Count":1652,
     "Percent":2.992048974,
-    "Payment":4707452.4199999999
+    "Payment":4707452.4199999999,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":166023.74,
+    "AntalRykker1Sum":431.0,
+    "AntalRykker2Sum":115.0
   },
   {
     "Kontraktnavn":"Fiber 25\/25",
     "Count":1439,
     "Percent":2.6062702624,
-    "Payment":42047453.4600000009
+    "Payment":42047453.4600000009,
+    "PremiumWifiCount":25.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":680159.62,
+    "AntalRykker1Sum":1053.0,
+    "AntalRykker2Sum":206.0
   },
   {
     "Kontraktnavn":"COAX 1000\/60",
     "Count":1100,
     "Percent":1.9922844258,
-    "Payment":3331016.79
+    "Payment":3331016.79,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":110953.77,
+    "AntalRykker1Sum":265.0,
+    "AntalRykker2Sum":68.0
   },
   {
     "Kontraktnavn":"COAX 100\/35",
     "Count":780,
     "Percent":1.4127107746,
-    "Payment":1967348.1399999999
+    "Payment":1967348.1399999999,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":56578.22,
+    "AntalRykker1Sum":178.0,
+    "AntalRykker2Sum":38.0
   },
   {
     "Kontraktnavn":"Fiber 200\/200",
     "Count":762,
     "Percent":1.3801097568,
-    "Payment":2507243.1200000001
+    "Payment":2507243.1200000001,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":67020.29,
+    "AntalRykker1Sum":160.0,
+    "AntalRykker2Sum":35.0
   },
   {
     "Kontraktnavn":"Fiber 1000\/500",
     "Count":649,
     "Percent":1.1754478112,
-    "Payment":2299360.5899999999
+    "Payment":2299360.5899999999,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":53977.19,
+    "AntalRykker1Sum":114.0,
+    "AntalRykker2Sum":31.0
   },
   {
     "Kontraktnavn":"Fiber 20\/20",
     "Count":571,
     "Percent":1.0341767337,
-    "Payment":15310935.1999999993
+    "Payment":15310935.1999999993,
+    "PremiumWifiCount":5.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":295554.35,
+    "AntalRykker1Sum":318.0,
+    "AntalRykker2Sum":74.0
   },
   {
     "Kontraktnavn":"Fiber 50\/50",
     "Count":417,
     "Percent":0.7552569141,
-    "Payment":9774848.7200000007
+    "Payment":9774848.7200000007,
+    "PremiumWifiCount":13.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":339095.37,
+    "AntalRykker1Sum":403.0,
+    "AntalRykker2Sum":110.0
   },
   {
     "Kontraktnavn":"COAX 1000\/500",
     "Count":359,
     "Percent":0.6502091899,
-    "Payment":580937.9399999999
+    "Payment":580937.9399999999,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":47250.3,
+    "AntalRykker1Sum":87.0,
+    "AntalRykker2Sum":20.0
   },
   {
     "Kontraktnavn":"COAX 300\/300",
     "Count":309,
     "Percent":0.5596508069,
-    "Payment":474850.45
+    "Payment":474850.45,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":38376.92,
+    "AntalRykker1Sum":88.0,
+    "AntalRykker2Sum":18.0
   },
   {
     "Kontraktnavn":"Fiber 250\/250",
     "Count":285,
     "Percent":0.516182783,
-    "Payment":836096.03
+    "Payment":836096.03,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":14717.67,
+    "AntalRykker1Sum":35.0,
+    "AntalRykker2Sum":12.0
   },
   {
     "Kontraktnavn":"COAX 200\/25",
     "Count":266,
     "Percent":0.4817705975,
-    "Payment":669666.6
+    "Payment":669666.6,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":21593.0,
+    "AntalRykker1Sum":66.0,
+    "AntalRykker2Sum":18.0
   },
   {
     "Kontraktnavn":"COAX 300\/60",
     "Count":178,
     "Percent":0.3223878434,
-    "Payment":247533.29
+    "Payment":247533.29,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":32883.81,
+    "AntalRykker1Sum":64.0,
+    "AntalRykker2Sum":14.0
   },
   {
     "Kontraktnavn":"Fiber 10\/10",
     "Count":138,
     "Percent":0.2499411371,
-    "Payment":3397659.3799999999
+    "Payment":3397659.3799999999,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":114615.68,
+    "AntalRykker1Sum":152.0,
+    "AntalRykker2Sum":49.0
   },
   {
     "Kontraktnavn":"COAX 200\/20",
     "Count":123,
     "Percent":0.2227736222,
-    "Payment":307775.56
+    "Payment":307775.56,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":6473.19,
+    "AntalRykker1Sum":20.0,
+    "AntalRykker2Sum":5.0
   },
   {
     "Kontraktnavn":"Fiber 30\/30",
     "Count":74,
     "Percent":0.1340264068,
-    "Payment":221761.57
+    "Payment":221761.57,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":1495.0,
+    "AntalRykker1Sum":5.0,
+    "AntalRykker2Sum":0.0
   },
   {
     "Kontraktnavn":"Fiber 60\/60",
     "Count":18,
     "Percent":0.0326010179,
-    "Payment":93365.94
+    "Payment":93365.94,
+    "PremiumWifiCount":1.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":1076.0,
+    "AntalRykker1Sum":3.0,
+    "AntalRykker2Sum":1.0
   },
   {
     "Kontraktnavn":"Fiber 400\/400",
     "Count":1,
     "Percent":0.0018111677,
-    "Payment":3390.0
+    "Payment":3390.0,
+    "PremiumWifiCount":0.0,
+    "AccessPointCount":0.0,
+    "RykkerSaldoSum":0.0,
+    "AntalRykker1Sum":0.0,
+    "AntalRykker2Sum":0.0
   }
 ]

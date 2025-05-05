@@ -2,58 +2,102 @@
 import pandas as pd
 
 # 1) Læs data
-df24 = pd.read_excel('data/Active_nov_2024.xlsx')
-df25 = pd.read_excel('data/Active_feb_2025.xlsx')
+ice = lambda df: (_ for _ in ()).throw(Exception)
+# Dataframes for 2024 og 2025
+try:
+    df24 = pd.read_excel('data/Active_nov_2024.xlsx')
+    df25 = pd.read_excel('data/Active_feb_2025.xlsx')
+except FileNotFoundError:
+    raise FileNotFoundError("Sørg for at placere Excel-filerne i 'data/' mappen")
 
-# 2) Beregn count + procent pr. kontraktnavn for 2024
-counts24 = (
-    df24['Kontraktnavn']
-    .value_counts()
-    .rename_axis('Kontraktnavn')
-    .reset_index(name='Count')
-)
-counts24['Percent'] = counts24['Count'] / counts24['Count'].sum() * 100
 
-# 3) Aggregér samlet betaling pr. kontraktnavn for 2024
-payments24 = (
-    df24
-    .groupby('Kontraktnavn', as_index=False)['Samlede betalinger']
-    .sum()
-    .rename(columns={'Samlede betalinger': 'Payment'})
-)
+def make_distribution(df):
+    # Count & percent per produkt (Kontraktnavn)
+    counts = (
+        df['Kontraktnavn']
+        .value_counts()
+        .rename_axis('Kontraktnavn')
+        .reset_index(name='Count')
+    )
+    counts['Percent'] = counts['Count'] / counts['Count'].sum() * 100
 
-# 4) Merge count+percent med betaling
-dist24 = counts24.merge(payments24, on='Kontraktnavn')
+    # Samlet betaling pr. produkt
+    payments = (
+        df
+        .groupby('Kontraktnavn', as_index=False)['Samlede betalinger']
+        .sum()
+        .rename(columns={'Samlede betalinger': 'Payment'})
+    )
 
-# 5) Gentag for 2025
-counts25 = (
-    df25['Kontraktnavn']
-    .value_counts()
-    .rename_axis('Kontraktnavn')
-    .reset_index(name='Count')
-)
-counts25['Percent'] = counts25['Count'] / counts25['Count'].sum() * 100
+    # Premium Wifi count
+    premium = (
+        df[df['Premium Wifi'] == True]
+        .groupby('Kontraktnavn', as_index=False)['Premium Wifi']
+        .count()
+        .rename(columns={'Premium Wifi': 'PremiumWifiCount'})
+    )
 
-payments25 = (
-    df25
-    .groupby('Kontraktnavn', as_index=False)['Samlede betalinger']
-    .sum()
-    .rename(columns={'Samlede betalinger': 'Payment'})
-)
+    # Access Point count
+    access = (
+        df[df['Access Point'] == True]
+        .groupby('Kontraktnavn', as_index=False)['Access Point']
+        .count()
+        .rename(columns={'Access Point': 'AccessPointCount'})
+    )
 
-dist25 = counts25.merge(payments25, on='Kontraktnavn')
+    # Rykker saldo sum
+    rykker_saldo = (
+        df
+        .groupby('Kontraktnavn', as_index=False)['Rykker saldo']
+        .sum()
+        .rename(columns={'Rykker saldo': 'RykkerSaldoSum'})
+    )
 
-# 6) Gem til filer
-dist24.to_csv('data/percent_internet_option/internet_distribution_2024.csv', index=False)
-dist24.to_json('data/percent_internet_option/internet_distribution_2024.json',
-               orient='records', force_ascii=False, indent=2)
+    # Antal rykker 1 sum
+    rykker1 = (
+        df
+        .groupby('Kontraktnavn', as_index=False)['Antal rykker 1']
+        .sum()
+        .rename(columns={'Antal rykker 1': 'AntalRykker1Sum'})
+    )
 
-dist25.to_csv('data/percent_internet_option/internet_distribution_2025.csv', index=False)
-dist25.to_json('data/percent_internet_option/internet_distribution_2025.json',
-               orient='records', force_ascii=False, indent=2)
+    # Antal rykker 2 sum
+    rykker2 = (
+        df
+        .groupby('Kontraktnavn', as_index=False)['Antal rykker 2']
+        .sum()
+        .rename(columns={'Antal rykker 2': 'AntalRykker2Sum'})
+    )
 
-# 7) Print for kontrol
-print("=== Distribution 2024 ===")
+    # Merge alle beregninger
+    dist = counts.merge(payments, on='Kontraktnavn', how='left') \
+        .merge(premium, on='Kontraktnavn', how='left') \
+        .merge(access, on='Kontraktnavn', how='left') \
+        .merge(rykker_saldo, on='Kontraktnavn', how='left') \
+        .merge(rykker1, on='Kontraktnavn', how='left') \
+        .merge(rykker2, on='Kontraktnavn', how='left')
+
+    # Udskift NaN med 0
+    for col in ['PremiumWifiCount', 'AccessPointCount', 'RykkerSaldoSum', 'AntalRykker1Sum', 'AntalRykker2Sum']:
+        dist[col] = dist[col].fillna(0)
+
+    return dist
+
+# 2) Generer distribution
+
+dist24 = make_distribution(df24)
+dist25 = make_distribution(df25)
+
+# 3) Gem til CSV/JSON
+for year, dist in [('2024', dist24), ('2025', dist25)]:
+    dist.to_csv(f'data/percent_internet_option/internet_distribution_{year}.csv', index=False)
+    dist.to_json(
+        f'data/percent_internet_option/internet_distribution_{year}.json',
+        orient='records', force_ascii=False, indent=2
+    )
+
+# 4) Udskriv resultat til kontrol
+print('=== Distribution 2024 ===')
 print(dist24)
-print("\n=== Distribution 2025 ===")
+print('\n=== Distribution 2025 ===')
 print(dist25)
