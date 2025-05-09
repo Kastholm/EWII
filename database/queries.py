@@ -8,7 +8,7 @@ def fetch_customer_data():
         return []
 
     dist = conn.cursor()
-    dist.execute("SELECT * FROM mac123$ewii_customer_data;")
+    dist.execute("SELECT * FROM ewii_customer_data;")
     data = dist.fetchall()
     
     dist.close()
