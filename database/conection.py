@@ -9,10 +9,10 @@ password = os.getenv("DB_PW")
 def conn_to_db():
     try:
         conn = mysql.connector.connect(
-            host="localhost",
-            user="root",
+            host="mac123.mysql.pythonanywhere-services.com",
+            user="mac123",
             password=password,
-            database="ewii_customer_data"
+            database="mac$ewii_customer_data"
         )
         if conn.is_connected():
             print('Connection to DB Established')
