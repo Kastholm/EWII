@@ -20,6 +20,12 @@
         },
         {
             "answer": "🤖 {\"API key til ChatGPT er fjernet, for at forhindre misbrug online. Du kan tilføje din eget GPT key i en .env fil med variabel 'GPT_KEY' \"}"
+        },
+        {
+            "answer": "🤖 {\"API key til ChatGPT er fjernet, for at forhindre misbrug online. Du kan tilføje din eget GPT key i en .env fil med variabel 'GPT_KEY' \"}"
+        },
+        {
+            "answer": "🤖 {\"API key til ChatGPT er fjernet, for at forhindre misbrug online. Du kan tilføje din eget GPT key i en .env fil med variabel 'GPT_KEY' \"}"
         }
     ]
 }

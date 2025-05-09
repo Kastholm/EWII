@@ -93,3 +93,5 @@ def on_send(n_clicks, prompt):
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
+server = app.server
