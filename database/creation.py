@@ -163,3 +163,6 @@ if __name__ == "__main__":
         n_customers=100
     )
     conn.close()
+
+
+    CREATE DATABASE IF NOT EXISTS ewii_customer_data

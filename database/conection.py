@@ -12,7 +12,7 @@ def conn_to_db():
             host="mac123.mysql.pythonanywhere-services.com",
             user="mac123",
             password=password,
-            database="mac$ewii_customer_data"
+            database="mac123$ewii_customer_data"
         )
         if conn.is_connected():
             print('Connection to DB Established')
