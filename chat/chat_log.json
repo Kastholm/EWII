@@ -1,0 +1,25 @@
+{
+    "chat": [
+        {
+            "question": "🧑‍🦲 Hvor mange % af vores kunder har skiftet Kontrakt mellem 2024 og 2025?"
+        },
+        {
+            "answer": "🤖 25,7 % af kunderne har skiftet kontrakt mellem 2024 og 2025. Dette viser, at en fjerdedel af vores kunder søger forskellige kontrakter, hvilket kan indikere en efterspørgsel efter variation i vores tilbud. Et søjlediagram, der sammenligner procentdelen af kunder, der har beholdt vs. skiftet kontrakt, ville være nyttigt."
+        },
+        {
+            "question": "🧑‍🦲 Hvor mange af vores kunder i 2025 har Premium WiFi ??"
+        },
+        {
+            "answer": "🤖 For at finde antallet af kunder i 2025 med Premium WiFi skal vi søge efter linjer med værdien '3' i kolonnen, der repræsenterer WiFi-kvalitet. \n\nLad mig tjekke det hurtigt for dig:\n\n- Der er **44** kunder i 2025, der har Premium WiFi.\n\nDette betyder, at en betydelig del af vores kunder vælger en højere kvalitet af WiFi, hvilket kan være et godt indtjeningsområde. En søjlediagram, der viser antallet af kunder med standard vs. premium WiFi, ville være nyttig for at visualisere dette."
+        },
+        {
+            "question": "🧑‍🦲 Hvor mange % ad vores kunder skylder penge?"
+        },
+        {
+            "answer": "🤖 37,8 % af vores kunder skylder penge.\n\nDette viser, at en betydelig del af vores kunder har ubetalte saldoer, hvilket kan påvirke vores kontantflow. \n\nEt cirkeldiagram kan være nyttigt til at vise forholdet mellem kunder, der skylder penge, og dem, der ikke gør det."
+        },
+        {
+            "answer": "🤖 {\"API key til ChatGPT er fjernet, for at forhindre misbrug online. Du kan tilføje din eget GPT key i en .env fil med variabel 'GPT_KEY' \"}"
+        }
+    ]
+}

@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './app.py',
     './pages/**/*.py',
+    './components/**/*.py',
     './layouts/**/*.py',
     './assets/**/*.html'
   ],

@@ -9,3 +9,7 @@ Requires-Dist: dash>=3.0.4
 Requires-Dist: pandas>=2.2.3
 Requires-Dist: dash-bootstrap-components>=2.0.2
 Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: openai>=1.77.0
+Requires-Dist: requests>=2.32.3
+Requires-Dist: mysql-connector-python>=9.3.0
+Requires-Dist: pandas>=2.2.3
