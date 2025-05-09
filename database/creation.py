@@ -156,7 +156,7 @@ if __name__ == "__main__":
     create_ewii_table(conn)
     generate_and_insert(
         conn,
-        excel_path="../data/Active_nov_2024.xlsx",
+        excel_path="../data/Active_Nov_2024.xlsx",
         n_customers=100
     )
     conn.close()
