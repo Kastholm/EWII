@@ -12,9 +12,9 @@ DB_PW = os.getenv("DB_PW")
 
 def conn_to_db(schema="ewii_customer_data"):
     conn = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password=DB_PW
+        host="mac123.mysql.pythonanywhere-services.com",
+        user="mac123",
+        password=DB_PW,
     )
     cursor = conn.cursor()
     cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{schema}`")
