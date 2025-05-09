@@ -10,16 +10,13 @@ import pandas as pd
 load_dotenv()
 DB_PW = os.getenv("DB_PW")
 
-def conn_to_db(schema="ewii_customer_data"):
-    conn = mysql.connector.connect(
+def conn_to_db():
+    return mysql.connector.connect(
         host="mac123.mysql.pythonanywhere-services.com",
         user="mac123",
         password=DB_PW,
+        database="mac123$ewii_customer_data"
     )
-    cursor = conn.cursor()
-    cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{schema}`")
-    conn.database = schema
-    return conn
 
 # —————————————————————————————
 # 2) Opret tabel
