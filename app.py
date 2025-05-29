@@ -1,10 +1,10 @@
 from dash import Dash, html, dcc, Input, Output, State, callback_context
 import dash
 import json
-from components.navbar import navbar
-from components.gpt import chatbot_assistant, json_file_path, Chat
+from views.components.navbar import navbar
+from views.components.gpt import chatbot_assistant, json_file_path, Chat
 
-app = Dash(__name__, use_pages=True)
+app = Dash(__name__, pages_folder="views", use_pages=True)
 
 chat_client = Chat()
 
