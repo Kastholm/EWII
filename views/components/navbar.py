@@ -1,18 +1,23 @@
 from dash import Dash, html, dcc
 import dash
 
-navbar = html.Div(
+# Debug print
+print("Page registry:", dash.page_registry)
+print("Page registry values:", list(dash.page_registry.values()))
+print("Page registry keys:", list(dash.page_registry.keys()))
+
+navbar = html.Div( 
     className="flex flex-col bg-white shadow-md bg-opacity-[60] min-w-56 h-[95vh] m-4 p-4 rounded-md",
     children=[
         # Altid synlige links
         html.Img(
-            src="https://w7.pngwing.com/pngs/1003/600/png-transparent-ewii-fuel-cells-kif-kolding-k%C3%B8benhavn-car-electric-vehicle-car-angle-text-trademark.png",
+            src="https://eu.eu-supply.com/img/brandings/Ewii_left.png",
             className="h-12 w-auto mb-6 mr-auto ml-4 "
         ),        
         dcc.Link("Home", href="/", className="block px-4 py-2 rounded hover:bg-gray-200"),
         dcc.Link("Oversigt", href="/oversigt", className="block px-4 py-2 rounded hover:bg-gray-200"),
 
-        # Collapsible “Data sider” sektion
+        # Collapsible "Data sider" sektion
         html.Details(
             className="group mt-4",
             children=[

@@ -88,7 +88,7 @@ class Chat():
 
 chatbot_assistant = html.Div(
     className=(
-        "w-[500px] bg-white fixed bottom-4 z-50 right-4 dark:bg-zinc-800 "
+        "w-[500px] bg-white fixed bottom-4 z-50 right-4 "
         "shadow-xl rounded-lg overflow-hidden"
     ),
     children=[
@@ -97,13 +97,13 @@ chatbot_assistant = html.Div(
             children=[
                 # Header
                 html.Div(
-                    className="px-4 bg-[#7bb93d] bg-opacity-50 py-3 border-b dark:border-zinc-700",
+                    className="px-4 bg-[#7bb93d] bg-opacity-50 py-3 border-b ",
                     children=html.Div(
                         className="flex justify-between items-center",
                         children=[
                             html.Img(
-                                src="https://w7.pngwing.com/pngs/1003/600/png-transparent-ewii-fuel-cells-kif-kolding-k%C3%B8benhavn-car-electric-vehicle-car-angle-text-trademark.png",
-                                className="h-8 w-auto mb-6 mr-auto ml-4 "
+                                src="https://eu.eu-supply.com/img/brandings/Ewii_left.png",
+                                className="h-12 w-auto mb-6 mr-auto ml-4 "
                             ),
                             html.Div(
                                 "❌",
@@ -120,7 +120,7 @@ chatbot_assistant = html.Div(
                 ),
                 # Input area
                 html.Div(
-                    className="px-3 py-2 border-t bg-[#7bb93d] bg-opacity-50 dark:border-zinc-700",
+                    className="px-3 py-2 border-t bg-[#7bb93d] bg-opacity-50 ",
                     children=html.Div(
                         className="flex gap-2",
                         children=[
@@ -128,7 +128,7 @@ chatbot_assistant = html.Div(
                                 id="chatInput",
                                 type="text",
                                 placeholder="Skriv din besked…",
-                                className="flex-grow p-2 border rounded-lg dark:bg-zinc-700 dark:text-white dark:border-zinc-600 text-sm"
+                                className="flex-grow p-2 border rounded-lg  text-sm"
                             ),
                             *([  
                                 html.Button(
