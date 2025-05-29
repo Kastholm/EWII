@@ -108,7 +108,7 @@ calendars = html.Div(
             className="flex items-center space-x-12 mb-4",
             children=[
 
-                # Fra
+               
                 html.Div(
                     className="flex items-center space-x-2",
                     children=[
@@ -130,7 +130,7 @@ calendars = html.Div(
                     ]
                 ),
 
-                # Til
+               
                 html.Div(
                     className="flex items-center space-x-2",
                     children=[

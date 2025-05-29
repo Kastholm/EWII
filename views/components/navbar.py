@@ -2,9 +2,33 @@ from dash import Dash, html, dcc
 import dash
 
 # Debug print
-print("Page registry:", dash.page_registry)
-print("Page registry values:", list(dash.page_registry.values()))
-print("Page registry keys:", list(dash.page_registry.keys()))
+
+pages = [
+    {
+        "name": "Aktive kunder Feb 2025",
+        "path": "/activefeb2025"
+    },
+    {
+        "name": "Aktive kunder Nov 2024",
+        "path": "/activenov2024"
+    },
+    {
+        "name": "Churn kunder Feb 2025",
+        "path": "/churnfeb2025" 
+    },
+    {
+        "name": "Churn kunder Nov 2024",
+        "path": "/churnnov2024"
+    },
+    {
+        "name": "Individ kunder Feb 2025",
+        "path": "/individfeb2025"
+    },
+    {
+        "name": "Individ kunder Nov 2024",
+        "path": "/individnov2024"
+    }
+]
 
 navbar = html.Div( 
     className="flex flex-col bg-white shadow-md bg-opacity-[60] min-w-56 h-[95vh] m-4 p-4 rounded-md",
@@ -37,15 +61,14 @@ navbar = html.Div(
                 ),
                 # Indrykket liste af data-sider
                 html.Div(
-                    className="pl-6 mt-2 flex flex-col space-y-1",
+                    className="pl-6 mt-2 flex flex-col text-sm space-y-1",
                     children=[
                         dcc.Link(
                             page["name"],
                             href=page["path"],
                             className="block px-2 py-1 rounded hover:bg-gray-200 transition"
                         )
-                        for page in dash.page_registry.values()
-                        if page["path"] not in ["/", "/oversigt"]
+                        for page in pages
                     ]
                 )
             ]

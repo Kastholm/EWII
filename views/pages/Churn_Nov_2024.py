@@ -11,12 +11,14 @@ df = pd.read_excel('models/raw_data/Churn_Nov_2024.xlsx', nrows=5000)
 # eller efter indlæsning
 df = df.iloc[:5000]
 
-layout = html.Div([
-    dash_table.DataTable(
-        data=df.to_dict('records'),
-        columns=[{"name": c, "id": c} for c in df.columns],
-        page_size=300,              # sæt selv antal rækker per side
-        style_table={"overflowX": "auto"},
+layout = html.Div(
+    className="h-[95vh] my-4 mr-4 bg-white bg-opacity-70 rounded-md grid place-content-start",
+    style={"overflow": "scroll", "width": "80vw"},
+    children=[
+        dash_table.DataTable(
+            data=df.to_dict('records'),
+            columns=[{"name": c, "id": c} for c in df.columns],
+        page_size=300,         
         style_cell={"textAlign": "left"}
     )
 ])
