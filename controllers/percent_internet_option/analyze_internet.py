@@ -5,8 +5,8 @@ import pandas as pd
 ice = lambda df: (_ for _ in ()).throw(Exception)
 # Dataframes for 2024 og 2025
 try:
-    df24 = pd.read_excel('models/raw_data/Active_Nov_2024.xlsx')
-    df25 = pd.read_excel('models/raw_data/Active_Feb_2025.xlsx')
+    df24 = pd.read_excel('models/raw_data/Active_nov_2024.xlsx')
+    df25 = pd.read_excel('models/raw_data/Active_feb_2025.xlsx')
 except FileNotFoundError:
     raise FileNotFoundError("Sørg for at placere Excel-filerne i 'data/' mappen")
 

@@ -20,7 +20,7 @@ def conn_to_db(schema="ewii_customer_data"):
         password=DB_PW
     )
     cursor = conn.cursor()
-    cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{schema}`")
+    #cursor.execute(f"CREATE DATABASE IF NOT EXISTS `{schema}`")
     conn.database = schema
     return conn
 
@@ -162,7 +162,7 @@ if __name__ == "__main__":
     create_ewii_table(conn)
     generate_and_insert(
         conn,
-        excel_path="../models/raw_data/Active_Nov_2024.xlsx",
+        excel_path="../models/raw_data/Active_nov_2024.xlsx",
         n_customers=100
     )
     conn.close()
