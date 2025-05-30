@@ -13,7 +13,7 @@ DB_PW = os.getenv("DB_PW")
 USER = os.getenv("USER")
 HOST = os.getenv("HOST")
 
-def conn_to_db(schema="ewii_customer_data"):
+def conn_to_db(schema="mac123$ewii_customer_data"):
     conn = mysql.connector.connect(
         host=HOST,
         user=USER,
